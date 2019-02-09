@@ -1,0 +1,10 @@
+<h1>Restaurant List :</h1>
+<% @restaurants.each_with_index do |rest, index| %>
+<div>
+<%= "#{index+1}. #{rest.name}" %>
+</div>
+<% end %>
+
+<br>
+
+<%= link_to "Click to add a restaurant", new_restaurant_path %>
